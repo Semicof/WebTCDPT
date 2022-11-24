@@ -112,6 +112,9 @@ body{
 .thumb{
     width: 50%;
 }
+.img_logo{
+    width: 80%;
+}
 .signup_form{
     background: #2c3e50;
     width: 50%;
@@ -130,23 +133,23 @@ body{
     box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
 }
 
-.form .heading {
-    color: #ffffff;
-    font-size: 2rem;
-}
+
 .or{
     color: #fff;
-    padding: 12px;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .form .desc {
     text-align: center;
     color: #ffffff;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: lighter;
     line-height: 2.4rem;
     margin-top: 16px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .form-group {
@@ -223,9 +226,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-.show_pass{
-    
-}
 .logo_login{
     width: 14px;
     margin-right: 8px;
@@ -242,16 +242,16 @@ body{
 }
 
 .signup{
+    margin: 12px 0;
     float: right;
-    margin: 20px 0;
     color: #fff;
 }
 .signup a{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+
 }
 .spacer {
     margin-top: 36px;
 }
-
