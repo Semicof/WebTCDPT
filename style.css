@@ -7,7 +7,7 @@
 html {
     color: #333;
     font-size: 62.5%;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .main {
@@ -181,9 +181,7 @@ hr{
     background: url('/img/Banner.png') top center / cover no-repeat;
     background-size: 100% 600px;
 }
-.products_container{
-    
-}
+
 .products_container_heading{
     padding: 40px;
     text-align: center;
