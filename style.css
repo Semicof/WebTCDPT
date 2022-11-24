@@ -7,7 +7,7 @@
 html {
     color: #333;
     font-size: 62.5%;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body{
@@ -102,6 +102,24 @@ body{
 .footer>span{
     color: #fff;
     font-size: 18px;
+}
+
+
+/* Thông tin chi tiết sản phẩm */
+
+.web-body{
+    position: relative;
+}
+
+.page-label{
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    font-size: 40px;
+}
+
+.product-tag{
+    display: flex;
 }
 
 
