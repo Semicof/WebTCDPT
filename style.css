@@ -19,6 +19,9 @@ html {
 .thumb{
     width: 50%;
 }
+.img_logo{
+    width: 80%;
+}
 .signup_form{
     background: #2c3e50;
     width: 50%;
@@ -37,23 +40,23 @@ html {
     box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
 }
 
-.form .heading {
-    color: #ffffff;
-    font-size: 2rem;
-}
+
 .or{
     color: #fff;
-    padding: 12px;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .form .desc {
     text-align: center;
     color: #ffffff;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: lighter;
     line-height: 2.4rem;
     margin-top: 16px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .form-group {
@@ -130,9 +133,6 @@ html {
     align-items: center;
     justify-content: center;
 }
-.show_pass{
-    
-}
 .logo_login{
     width: 14px;
     margin-right: 8px;
@@ -149,15 +149,57 @@ html {
 }
 
 .signup{
+    margin: 12px 0;
     float: right;
-    margin: 20px 0;
     color: #fff;
 }
 .signup a{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+
 }
 .spacer {
     margin-top: 36px;
+}
+hr{
+    width: 40%;
+    height: 1px;
+}
+
+.maintain_login span,
+.maintain_login{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    margin-top: 88px;
+    padding-top: 50%;
+    background: url('/img/Banner.png') top center / cover no-repeat;
+    background-size: 100% 600px;
+}
+.products_container{
+    
+}
+.products_container_heading{
+    padding: 40px;
+    text-align: center;
+}
+.title_home_page{
+    padding: 10px;
+    font-size: 12px;
+}
+.content_home_page{
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+.description_home_page_title{
+    padding: 4px;
+}
+.description_home_page_content,
+.description_home_page_title{
+    font-size: 12px;
 }
