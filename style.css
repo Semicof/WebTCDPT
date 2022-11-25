@@ -30,7 +30,7 @@ body{
     height: 100px;
     text-align: center;
 }
-.logo>img{
+.logo>a>img{
     margin-top: 20px;
 }
 .menu{
@@ -52,19 +52,41 @@ body{
 .search{
     width: 30%;
     height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.search>i{
+.search-area{
+    position: relative;
+    background-color: #56799C;
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    color: #cacaca;
+    font-size: 15px;
+    overflow: hidden;
+}
+.search-area>input{
     position: absolute;
-    font-size: 30px;
-    color: #fff;
-    right: 100px;
-    top: 25px;
+    height: 100%;
+    width: 100%;
+    background-color: #56799C;
+    border: none;
+    outline: none;
+    color: white;
+    padding-left: 5%;
 }
 
-.search>i:hover{
-    cursor: pointer;
-    color: #999;
+::placeholder{
+    color: #cacaca;
 }
+
+.search-area>i{
+    position: absolute;
+    right: 5%;
+    top: 25%;
+}
+
 /* Footer */
    
 .footer{
@@ -74,7 +96,7 @@ body{
     text-align: center;
 }
 .logoB{
-    margin-top: 15px;
+   padding-top: 20px;
 }
 .r-container{
     width: 100%;
