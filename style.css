@@ -1,10 +1,15 @@
 * {
     padding: 0;
     margin: 0;
+    outline: 0;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
+    color: #1f2b38;
 }
 html {
-    color: #333;
+    
     font-size: 62.5%;
     font-family: "Open Sans", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -69,7 +74,7 @@ body{
 .search-area>input{
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 85%;
     background-color: #56799C;
     border: none;
     outline: none;
@@ -86,6 +91,18 @@ body{
     right: 5%;
     top: 25%;
 }
+
+/*body*/
+
+.web-body {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 /* Footer */
    

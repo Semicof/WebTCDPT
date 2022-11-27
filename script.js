@@ -4,6 +4,7 @@ const $$ = document.querySelectorAll.bind(document);
 
 //Login/signup
 function Validator(options) {
+    let formElement = document.querySelector(options.form);
     function validate(inputElement, rule) {
         var errorMessage = rule.test(inputElement.value)
         var errorElement = inputElement.parentElement.querySelector(options.errorSelector)
@@ -17,7 +18,6 @@ function Validator(options) {
             inputElement.parentElement.classList.remove('invalid')
         }
     }
-    var formElement = document.querySelector(options.form);
     if (formElement) {
         options.rules.forEach(function (rule) {
             var inputElement = formElement.querySelector(rule.selector)
@@ -40,7 +40,7 @@ Validator.isRequired = function (selector) {
     return {
         selector: selector,
         test: function (value) {
-            return value.trim() ? undefined : 'Vui lòng nhập trường này'
+            return value.trim() ? undefined : 'Vui lòng nhập mục này'
         }
     }
 }
