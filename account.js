@@ -4,6 +4,19 @@ const aAccounts=document.getElementById("a-accounts");
 const aProducts=document.getElementById("a-products");
 const logOut=document.getElementById("log-out");
 
+const infoContainer=document.querySelector(".info-main-container");
+const ordersContainer=document.querySelector(".orders-main-container");
+const accountsContainer=document.querySelector(".accounts-main-container");
+const productsContainer=document.querySelector(".products-main-container");
+
+const containerArr=[];
+
+containerArr.push(infoContainer);
+containerArr.push(ordersContainer);
+containerArr.push(accountsContainer);
+containerArr.push(productsContainer);
+
+
 const btnArr=[];
 
 btnArr.push(aInfo);
@@ -16,74 +29,30 @@ btnArr.forEach((btn)=>{
     btn.addEventListener("click",()=>{
         removeActive();
         btn.classList.add("active");
-        let aMainContainer=document.createElement("div");
-        aMainContainer.classList.add("a-main-container");
-        let preBtn=aInfo;
         if(btn==aInfo){
-            aMainContainer.innerHTML=`<div class="a-label"><h1>Thông tin cá nhân</h1></div>
-            <div class="a-row">
-              <div class="a-value-label">Họ và tên:</div>
-              <div class="a-value">Nguyễn Văn Admin</div>
-              <i class="fa-solid fa-pencil"></i>
-              <span>Sửa</span>
-            </div> <hr />
-  
-            <div class="a-row">
-              <div class="a-value-label">Ngày sinh:</div>
-              <div class="a-value">01/01/2002</div>
-              <i class="fa-solid fa-pencil"></i>
-              <span>Sửa</span>
-            </div> <hr />
-  
-            <div class="a-row">
-              <div class="a-value-label">Giới tính:</div>
-              <div class="a-value">Nam</div>
-              <i class="fa-solid fa-pencil"></i>
-              <span>Sửa</span>
-            </div> <hr />
-  
-            <div class="a-row">
-              <div class="a-value-label">Email:</div>
-              <div class="a-value">toilaadmin@gmail.com</div>
-              <i class="fa-solid fa-pencil"></i>
-              <span>Sửa</span>
-            </div> <hr />
-  
-            <div class="a-row">
-              <div class="a-value-label">Số điện thoại:</div>
-              <div class="a-value">0987654321</div>
-              <i class="fa-solid fa-pencil"></i>
-              <span>Sửa</span>
-            </div>
-            <div class="a-label"><h1>Thiết lập</h1></div>
-            <div class="a-row">
-              <div class="a-value-label">Mật khẩu:</div>
-              <div class="a-value">**********</div>
-              <i class="fa-solid fa-pencil"></i>
-              <span>Sửa</span>
-            </div>`;
-            if(btn!==preBtn)
-                document.getElementById("a-main").appendChild(aMainContainer);
-            preBtn=aInfo;
+            if(!infoContainer.classList.contains("activated"))
+                infoContainer.classList.add("activated");
         }
         else if(btn===aOrders){
-            document.getElementById("a-main").innerHTML="";
-            preBtn=aOrders;
+            if(!ordersContainer.classList.contains("activated"))
+                ordersContainer.classList.add("activated");
         }
         else if(btn===aAccounts){
-            document.getElementById("a-main").innerHTML="";
-            preBtn=aAccounts;
+            if(!accountsContainer.classList.contains("activated"))
+            accountsContainer.classList.add("activated");
         }
         else if(btn===aProducts){
-            document.getElementById("a-main").innerHTML="";
-            preBtn=aProducts;
+            if(!productsContainer.classList.contains("activated"))
+                productsContainer.classList.add("activated");
         }
-        console.log(preBtn);
     })
 })
 
 function removeActive(){
     btnArr.forEach((btn)=>{
         btn.classList.remove("active");
+    })
+    containerArr.forEach((container)=>{
+        container.classList.remove("activated");
     })
 }

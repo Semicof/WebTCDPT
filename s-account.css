@@ -57,12 +57,6 @@ aside .sidebar a>i{
   font-size: 20px;
 }
 
-aside .sidebar a:last-child{
-  position: absolute;
-  bottom: 2rem;
-  width: 100%;
-}
-
 
 aside .sidebar a.active{
   background: #f5f5f5;
@@ -91,9 +85,15 @@ main{
   justify-content: center;
 }
 
-.a-main-container{
+
+
+/* 
+info */
+
+.info-main-container{
   width: 90%;
   height: 90%;
+  display: none;
 }
 
 .a-label{
@@ -131,4 +131,103 @@ main{
 }
 
 
+/* orders */
+.orders-main-container{
+  width: 90%;
+  height: 90%;
+  display: none;
+}
+
+.a-table{
+  width: 90%;
+  border-collapse: collapse;
+  margin: 25px 30px;
+  font-size: 20px;
+  min-width: 600px;
+}
+
+.a-table thead tr{
+  background-color: #79aadb;
+  text-align: center;
+  font-weight: bold;
+}
+
+.a-table th,
+.a-table td{
+  padding: 20px;
+}
+
+.a-table tbody tr{
+  border-bottom: 1px solid #1f2b38;
+  text-align: center;
+}
+
+.a-table tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+
+.a-table tbody tr:last-of-type{
+  border-bottom: 2px solid #79aadb;
+}
+
+#a-status{
+  width: 100%;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+}
+
+.a-edit>.fa-pencil{
+  color: #1f2b38;
+  margin-right: 10px;
+}
+
+.a-edit>.fa-trash{
+  color: #1f2b38;
+}
+
+.orders-main-container h2{
+  font-size: 20px;
+  text-align: center;
+  color: #1f2b38;
+ 
+}
+
+.orders-main-container h2:hover{
+  cursor: pointer;
+  color: #79aadb;
+}
+
+
+
+
+/* accounts */
+.accounts-main-container{
+  width: 90%;
+  height: 90%;
+  display: none;
+}
+
+#authority{
+  border: none;
+  color: #1f2b38;
+  font-size: 20px;
+}
+
+
+/* products */
+.products-main-container{
+  width: 90%;
+  height: 90%;
+  display: none;
+}
+
+#isPosted{
+  width: 30px;
+  height: 30px;
+}
+
+.activated{
+  display: block;
+}
 
