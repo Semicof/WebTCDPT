@@ -31,7 +31,11 @@ html {
     margin: 8px 0;
 }
 
-
+.banner_product{
+    margin-top: 88px;
+    padding-top: 50%;
+    background: url('/img/Slice 3.png') top center / cover no-repeat;
+}
 .black_box {
     width: 15px;
     height: 15px;

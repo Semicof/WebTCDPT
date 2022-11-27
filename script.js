@@ -101,19 +101,31 @@ pluss.forEach(function (plus, index) {
     }
 })
 // click phuong thuc van chuyen va thanh toan
+const transport_fee = $('.transport_fee');
 const transports = $$('.item_transport');
 const receiver = $('.receiver_pay');
 const transports_pay = $$('.item_transport_pay');
-transports.forEach(function (transport) {
+transports.forEach(function (transport, index) {
     transport.onclick = function () {
         $('.item_transport.click').classList.remove('click');
         transport.classList.add('click');
+        if (index == 0) {
+            transport_fee.innerText = '';
+            transport_fee.innerText += '15.000đ';
+        }else if(index == 1){
+            transport_fee.innerText = '';
+            transport_fee.innerText += '30.000đ';
+        }else if(index == 2){
+            transport_fee.innerText = '';
+            transport_fee.innerText += '65.000đ';
+        }
     }
+    
 })
 
 transports_pay.forEach(function (transport_pay, index) {
     transport_pay.onclick = function () {
-        if (index === 0){
+        if (index === 0) {
             $('.item_transport_pay.click').classList.remove('click');
             transport_pay.classList.add('click');
             receiver.style.display = 'none';
