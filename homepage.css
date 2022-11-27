@@ -70,6 +70,10 @@ html {
 .products_item:hover {
     cursor: pointer;
 }
+.deltal_item{
+    text-decoration: none;
+    color: #000;
+}
 
 .products_item {
     border: 1px solid #cecccc;
