@@ -47,6 +47,7 @@ html {
     display: flex;
     justify-content: space-between;
 }
+
 .dashboard {
     width: 58%;
     border: 1px solid #e6e1e1;
@@ -103,9 +104,10 @@ html {
     padding: 4px;
 }
 
-.delete{
+.delete {
     cursor: pointer;
 }
+
 .price,
 .delete {
     text-align: right;
@@ -119,7 +121,8 @@ html {
     bottom: 0;
     transform: translateX(6%);
 }
-.line1{
+
+.line1 {
     height: 1px;
     background-color: #000;
     width: 0;
@@ -127,10 +130,12 @@ html {
     transition: all 0.5s ease;
     bottom: 0;
 }
-.click{
+
+.click {
     background-color: #f4f3f3;
 }
-.active{
+
+.active {
     display: block;
 }
 
@@ -145,7 +150,8 @@ html {
     padding: 20px;
     box-shadow: 4px 4px #e7e7e7;
 }
-.dashboard_content_tab{
+
+.dashboard_content_tab {
     display: flex;
     align-items: center;
     position: relative;
@@ -167,43 +173,53 @@ html {
 .btn {
     padding: 20px 0 50px;
 }
-.item_transport{
+
+.item_transport {
     border-radius: 8px;
     position: relative;
     border: 1px solid #e7e7e7;
     padding: 8px;
-    margin:10px 0 20px;
+    margin: 10px 0 20px;
     cursor: pointer;
 }
-.method_transport{
+
+.method_transport {
     position: absolute;
     top: -6px;
     padding: .5px;
     background-color: #fff;
     left: 10px;
 }
-.receiver_info{
+.receiver_pay{
+    display: none;
+}
+.receiver_info {
     display: flex;
     margin: 10px 0;
 }
-.receiver_info_name{
+
+.receiver_info_name {
     display: flex;
     flex-direction: column;
     width: 40%;
 }
-.receiver_contitle{
+
+.receiver_contitle {
     font-size: 12px;
 }
+
 .receiver_info_name select,
-.receiver_info_name input{
+.receiver_info_name input {
     padding: 8px;
     margin-right: 16px;
     border-radius: 8px;
     border: 1px solid #e7e7e7;
 }
-.receiver_info_name label{
+
+.receiver_info_name label {
     margin: 8px 0;
 }
-.dashboard_addr{
+
+.dashboard_addr {
     display: none;
 }

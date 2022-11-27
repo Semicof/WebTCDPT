@@ -102,10 +102,27 @@ pluss.forEach(function (plus, index) {
 })
 // click phuong thuc van chuyen va thanh toan
 const transports = $$('.item_transport');
+const receiver = $('.receiver_pay');
+const transports_pay = $$('.item_transport_pay');
 transports.forEach(function (transport) {
     transport.onclick = function () {
         $('.item_transport.click').classList.remove('click');
         transport.classList.add('click');
+    }
+})
+
+transports_pay.forEach(function (transport_pay, index) {
+    transport_pay.onclick = function () {
+        if (index === 0){
+            $('.item_transport_pay.click').classList.remove('click');
+            transport_pay.classList.add('click');
+            receiver.style.display = 'none';
+        }
+        else {
+            $('.item_transport_pay.click').classList.remove('click');
+            receiver.style.display = 'block';
+            transport_pay.classList.add('click');
+        }
     }
 })
 // delete san pham
@@ -113,6 +130,6 @@ const deletes = $$('.delete');
 deletes.forEach(function (delet, index) {
     delet.onclick = function () {
         products[index].style.display = 'none';
-        cnt = cnt+1;
+        cnt = cnt + 1;
     }
 })
