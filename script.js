@@ -1,3 +1,8 @@
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document);
+
+
+//Login/signup
 function Validator(options) {
     function validate(inputElement, rule) {
         var errorMessage = rule.test(inputElement.value)
@@ -49,3 +54,65 @@ Validator.minLength = function (selector, min) {
     }
 }
 
+//cart tab ui
+const tabs = $$('.dashboard_content_title');
+const description = $$('.dashboard_content_list');
+const line = $('.line1');
+const tabActive = $('.dashboard_content_title.checked');
+// console.log([tabActive]);
+line.style.left = tabActive.offsetLeft + 'px';
+line.style.width = tabActive.offsetWidth + 'px';
+tabs.forEach(function (tab, index) {
+    const pane = description[index];
+    tab.onclick = function () {
+        $('.dashboard_content_title.checked').classList.remove('checked');
+        $('.dashboard_content_list.active').classList.remove('active');
+        tab.classList.add('checked');
+        pane.classList.add('active');
+        line.style.left = tab.offsetLeft + 'px';
+        line.style.width = tab.offsetWidth + 'px';
+    }
+})
+
+// số lượng sản phẩm
+const minuss = $$('.minus');
+const pluss = $$('.plus');
+const numbers = $$('.number');
+// console.log([numbers]);
+const products = $$('.dashboard_content_list_item');
+minuss.forEach(function (minus, index) {
+    const number = numbers[index];
+    minus.onclick = function () {
+        if (number.innerText === '0') {
+            number.innerText = '0';
+        } else {
+            let s = number.innerText;
+            number.innerText = '';
+            number.innerText += eval(s + '-1');
+        }
+    }
+})
+pluss.forEach(function (plus, index) {
+    const number = numbers[index];
+    plus.onclick = function () {
+        let s = number.innerText;
+        number.innerText = '';
+        number.innerText += eval(s + '+1');
+    }
+})
+// click phuong thuc van chuyen va thanh toan
+const transports = $$('.item_transport');
+transports.forEach(function (transport) {
+    transport.onclick = function () {
+        $('.item_transport.click').classList.remove('click');
+        transport.classList.add('click');
+    }
+})
+// delete san pham
+const deletes = $$('.delete');
+deletes.forEach(function (delet, index) {
+    delet.onclick = function () {
+        products[index].style.display = 'none';
+        cnt = cnt+1;
+    }
+})
