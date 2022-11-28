@@ -23,7 +23,7 @@ html {
 .banner {
     margin-top: 88px;
     padding-top: 50%;
-    background: url('/img/Banner.png') top center / cover no-repeat;
+    background: url(img/Banner.png) top center / cover no-repeat;
 }
 
 .products_container_heading {
