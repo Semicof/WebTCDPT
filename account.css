@@ -1,7 +1,7 @@
 .web-body{
     background: url("/img/bg-account.jpg") ;
     background-position-x: center;
-    background-size: 800px 533px;
+    background-size: 1000px 633px;
 }
 
 .noti-container{
@@ -21,24 +21,35 @@
     margin-top: 50px;
     font-size: 40px;
     color: #fff;
+    margin-bottom: 30px;
 }
 
 .log-btn-container{
     margin: 50px 0;
     width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .logIn-btn,
 .signUp-btn{
-    font-size: 17px;
+    font-size: 27px;
     font-weight: bold;
     margin: 40px 0;
-    width: 200px;
+    width: 300px;
     height: 80px;
     background-color: #2C3E50;
     color: #fff;
     border-radius: 10px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    width: 100%;
+    border: 2px solid #fff;
 }
 
 .logIn-btn:hover{
