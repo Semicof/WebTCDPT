@@ -9,12 +9,14 @@ const ordersContainer=document.querySelector(".orders-main-container");
 const accountsContainer=document.querySelector(".accounts-main-container");
 const productsContainer=document.querySelector(".products-main-container");
 
+
 const containerArr=[];
 
 containerArr.push(infoContainer);
 containerArr.push(ordersContainer);
 containerArr.push(accountsContainer);
 containerArr.push(productsContainer);
+
 
 
 const btnArr=[];
@@ -44,6 +46,10 @@ btnArr.forEach((btn)=>{
         else if(btn===aProducts){
             if(!productsContainer.classList.contains("activated"))
                 productsContainer.classList.add("activated");
+        }
+        else if(btn===aBought){
+            if(!boughtContainer.classList.contains("activated"))
+                boughtContainer.classList.add("activated");
         }
     })
 })
