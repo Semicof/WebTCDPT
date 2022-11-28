@@ -18,6 +18,15 @@ html {
 body{
     width: 100%;
 }
+
+button:hover{
+    cursor: pointer;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
 /* Nav-Bar */
 .nav-bar{
     position: fixed;
@@ -134,6 +143,7 @@ body{
     color: #fff;
     font-size: 18px;
 }
+
 
 
 
