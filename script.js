@@ -59,7 +59,6 @@ const tabs = $$('.dashboard_content_title');
 const description = $$('.dashboard_content_list');
 const line = $('.line1');
 const tabActive = $('.dashboard_content_title.checked');
-// console.log([tabActive]);
 line.style.left = tabActive.offsetLeft + 'px';
 line.style.width = tabActive.offsetWidth + 'px';
 tabs.forEach(function (tab, index) {
@@ -78,7 +77,6 @@ tabs.forEach(function (tab, index) {
 const minuss = $$('.minus');
 const pluss = $$('.plus');
 const numbers = $$('.number');
-// console.log([numbers]);
 const products = $$('.dashboard_content_list_item');
 minuss.forEach(function (minus, index) {
     const number = numbers[index];
