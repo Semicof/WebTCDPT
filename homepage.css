@@ -9,7 +9,11 @@ html {
     font-size: 62.5%;
     font-family: "Open Sans", sans-serif;
 }
-
+.product_bestSeller_all i,
+.product_bestSeller_all,
+.products_bestSeller span{
+    color: #fff;
+}
 .nav-bar {
     position: fixed;
     top: 0;

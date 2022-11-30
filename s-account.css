@@ -234,6 +234,7 @@ info */
 }
 
 .a-search-area{
+  position: relative;
   width: 20%;
   height: 30%;
   border: #1f2b38 1px solid;
@@ -248,9 +249,13 @@ info */
 }
 
 .a-search-area>i{
-  height: 100%;
   font-size: 17px;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  line-height: 30%;
 }
 
 
