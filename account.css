@@ -3,7 +3,9 @@
     background-position-x: center;
     background-size: 1000px 633px;
 }
-
+.footer{
+    margin-top: 0;
+}
 .noti-container{
     width: 50%;
     text-align: center;

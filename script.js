@@ -54,6 +54,14 @@ Validator.minLength = function (selector, min) {
     }
 }
 
+Validator.isConfirmed = function (selector, getConfirmValue, message) {
+    return {
+        selector: selector,
+        test: function (value) {
+            return value === getConfirmValue() ? undefined : message || 'Gia tri nhap vao khong chinh xac'
+        }
+    }
+}
 //cart tab ui
 const tabs = $$('.dashboard_content_title');
 const description = $$('.dashboard_content_list');
